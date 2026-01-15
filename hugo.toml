@@ -20,7 +20,7 @@ title = "My Portfolio"
 description = "Researcher and Developer Portfolio"
 # staticPath must match your baseURL path for GitHub Pages and local preview with subdirectory
 staticPath = "/portfolio_website"
-favicon = "/fav.png"
+# favicon = "/fav.png"
 useBootstrapCDN = false
 animate = true
 customCSS = true
@@ -45,15 +45,15 @@ enable = true
 intro = "Hi, my name is"
 title = "James Baker"
 subtitle = "PhD Candidate & Researcher"
-content = "I am a researcher specializing in [Your Field]. Welcome to my portfolio."
+content = "I am a PhD Graduate Student and software developer in Human Genetics . Welcome to my portfolio."
 image = "/images/hero.svg"
 [params.hero.bottomImage]
 enable = true
 [params.hero.button]
 enable = true
-name = "View CV"
-url = "/cv"
-download = false
+name = "Download CV"
+url = "files/James_Baker_CV.pdf"
+download = true
 newPage = false
 [[params.hero.socialLinks.fontAwesomeIcons]]
 icon = "fab fa-github"
@@ -65,7 +65,7 @@ url = "https://www.linkedin.com/in/james-baker-233243339"
 [params.about]
 enable = true
 title = "About Me"
-content = "I am a software developer and researcher with a passion for..."
+content = "I am a PhD graduate student in the Human Genetics Program at Vanderbilt University "
 
 [params.skills]
 enable = true
@@ -158,19 +158,69 @@ content = "American Journal of Human Genetics, 2025"
 name = "Link"
 link = "https://doi.org/10.1016/j.ajhg.2025.09.011"
 
+[[params.projects.items]]
+title = "Genetic study of von Willebrand factor antigen levels ≤ 50 IU/dL identifies variants associated with increased risk of VWD and bleeding"
+authors = "Friedman RK, Heath AS, Huffman JE, Baker JT, Hasbani NR, Gagliano Taliun SA, Chen MH, Howard TE, Lewis JP, Pankratz N, Patil S, Reiner AP, Thibord F, Yanek LR, Yao J, Chen HH, Curran JE, Faraday N, Guo X, Wheeler MM, Ryan KA, Zhou X, Cho K, Almasy L, Auer PL, Becker LC, Wilson PWF, Boerwinkle E, O'Connell JR, Rich SS, Samuels DC; NHLBI Trans-Omics for Precision Medicine (TOPMed) Consortium; TOPMed Hematology & Hemostasis Working Group; VA Million Veteran Program; Blangero J, Fornage M, Kooperberg C, Mathias RA, Mitchell BD, Rotter JI, Johnson AD, Smith NL, Coban-Akdemir ZH, Below JE, Morrison AC, Johnsen JM, de Vries PS"
+content = "Journal of Thrombosis and Haemostasis"
+[params.projects.items.featured]
+name = "Link"
+link = "https://doi.org/10.1016/j.jtha.2025.04.029"
+
+[[params.projects.items]]
+title = "Gene and phenome-based analysis of the shared genetic architecture of eye diseases"
+authors = "Scalici A, Miller-Fleming TW, Shuey MM, Baker JT, Betti M, Hirbo J, Knapik EW, Cox NJ"
+content = "American Journal of Human Genetics"
+[params.projects.items.featured]
+name = "Link"
+link = "https://doi.org/10.1016/j.ajhg.2025.01.004"
+
+[[params.projects.items]]
+title = "Detection of distant relatedness in biobanks to identify undiagnosed cases of Mendelian disease as applied to Long QT syndrome"
+authors = "Lancaster MC, Chen HH, Shoemaker MB, Fleming MR, Strickland TL, Baker JT, Evans GF, Polikowsky HG, Samuels DC, Huff CD, Roden DM, Below JE"
+content = "Nature Communications"
+[params.projects.items.featured]
+name = "Link"
+link = "https://doi.org/10.1016/j.ajhg.2025.01.004"
+
+
+[[params.projects.items]]
+title = "Machine-learning based classification of Frontotemporal dementia in electronic health records for genetic discovery"
+authors = "Below, J., Shaw, D., Evans, G., Baker, J., Bohlender, R., Petty, A., Petty, L., Roshani, R., Lifferth, J., Bastarache, L., Naj, A., Bush, W., Darby, R., McMillan, C., Samuels, D., Huff, C"
+content = "Alzhimer's & Dementia (2023)"
+[params.projects.items.featured]
+name = "Link"
+link = "https://doi.org/10.1002/alz.080074"
+
+
+[[params.projects.items]]
+title = "2-aminobenzimidazoles as antibiofilm agents against salmonella enterica serovar typhimurium"
+authors = "Huggins, W. M., Vu Nguyen, T., Hahn, N. A., Baker, J.T., Kuo, L. G., Kaur, D., Melander, R. J., Gunn, J. S., & Melander, C"
+content = "MedChemComm (2018)"
+[params.projects.items.featured]
+name = "Link"
+link = "https://doi.org/10.1039/c8md00298c"
+
+[[params.projects.items]]
+title = "Meridianin D analogues display antibiofilm activity against MRSA and increase colistin efficacy in gram-negative bacteria"
+authors = "Huggins, W. M., Barker, W. T., Baker, J.T., Hahn, N. A., Melander, R. J., & Melander, C"
+content = "ACS Medicinal Chemistry Letters"
+[params.projects.items.featured]
+name = "Link"
+link = "https://doi.org/10.1021/acsmedchemlett.8b00161"
+
 [params.contact]
 enable = true
-content = "Feel free to reach out for collaborations or inquiries!"
+content = "Feel free to reach out"
 btnName = "Contact Me"
-btnLink = "mailto:youremail@example.com"
+btnLink = "james.baker@vanderbilt.edu"
 # [params.contact.formspree]
 #   enable = true
 #   formId = "yourid"
 
 [params.footer]
 [params.footer.socialNetworks]
-github = "https://github.com/yourusername"
-linkedin = "https://linkedin.com/in/yourusername"
+github = "https://github.com/jtb324"
+linkedin = "https://www.linkedin.com/in/james-baker-233243339"
 
 [menu]
 [[menu.main]]
@@ -178,8 +228,3 @@ identifier = "publications"
 name = "Publications"
 url = "/#projects"
 weight = 1
-[[menu.main]]
-identifier = "cv"
-name = "CV"
-url = "/cv"
-weight = 2
