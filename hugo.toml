@@ -1,4 +1,4 @@
-baseURL = "https://jtbaker.github.io/portfolio_website/"
+baseURL = "https://jtbaker.github.io/"
 languageCode = "en-us"
 title = "My Portfolio"
 theme = "hugo-profile"
