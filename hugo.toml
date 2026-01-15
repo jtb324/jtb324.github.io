@@ -20,7 +20,7 @@ unsafe = true
 title = "My Portfolio"
 description = "Researcher and Developer Portfolio"
 # staticPath must match your baseURL path for GitHub Pages and local preview with subdirectory
-staticPath = "/portfolio_website"
+staticPath = ""
 # favicon = "/fav.png"
 useBootstrapCDN = false
 animate = true
