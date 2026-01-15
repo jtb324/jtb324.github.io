@@ -2,6 +2,7 @@ baseURL = "https://jtbaker.github.io/portfolio_website/"
 languageCode = "en-us"
 title = "My Portfolio"
 theme = "hugo-profile"
+publishDir = "docs"
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
