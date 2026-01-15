@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications on My Portfolio</title>
-    <link>https://jtbaker.github.io/portfolio_website/publications/</link>
+    <link>https://jtb324.github.io/publications/</link>
     <description>Recent content in Publications on My Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://jtbaker.github.io/portfolio_website/publications/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jtb324.github.io/publications/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
