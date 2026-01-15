@@ -1,0 +1,185 @@
+baseURL = "https://jtbaker.github.io/portfolio_website/"
+languageCode = "en-us"
+title = "My Portfolio"
+theme = "hugo-profile"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+page = ["HTML", "RSS"]
+
+[pagination]
+pagerSize = 3
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+title = "My Portfolio"
+description = "Researcher and Developer Portfolio"
+# staticPath must match your baseURL path for GitHub Pages and local preview with subdirectory
+staticPath = "/portfolio_website"
+favicon = "/fav.png"
+useBootstrapCDN = false
+animate = true
+customCSS = true
+
+[params.navbar]
+align = "ms-auto"
+brandName = "My Portfolio"
+disableSearch = false
+[params.navbar.stickyNavBar]
+enable = true
+showOnScrollUp = true
+[params.navbar.menus]
+disableAbout = false
+disableExperience = false
+disableEducation = false
+disableProjects = false
+disableAchievements = true
+disableContact = false
+
+[params.hero]
+enable = true
+intro = "Hi, my name is"
+title = "James Baker"
+subtitle = "PhD Candidate & Researcher"
+content = "I am a researcher specializing in [Your Field]. Welcome to my portfolio."
+image = "/images/hero.svg"
+[params.hero.bottomImage]
+enable = true
+[params.hero.button]
+enable = true
+name = "View CV"
+url = "/cv"
+download = false
+newPage = false
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-github"
+url = "https://github.com/jtb324"
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-linkedin"
+url = "https://www.linkedin.com/in/james-baker-233243339"
+
+[params.about]
+enable = true
+title = "About Me"
+content = "I am a software developer and researcher with a passion for..."
+
+[params.skills]
+enable = true
+title = "Skills"
+content = "Here are some of the technologies I work with:"
+items = [
+  "Python",
+  "R",
+  "Pandas",
+  "Polars",
+  "DuckDB",
+  "ggplot",
+  "SQL",
+  "Docker",
+  "Git & GitHub",
+  "REGENIE",
+  "SAIGE",
+  "PLINK",
+  "BCFtools",
+]
+
+[params.experience]
+enable = true
+[[params.experience.items]]
+company = "College of Basic Sciences - Vanderbilt University"
+companyUrl = "https://www.vanderbilt.edu/"
+mentors = "David Samuels, PhD & Jennifer Below, PhD"
+[[params.experience.items.jobs]]
+name = "Graduate Student Researcher"
+date = "Aug 2019 - Present"
+content = ""
+projects = [
+  "DRIVE: Python CLI tool leveraging graph theory and identity-by-descent (IBD) in biobanks to identify networks of related individuals",
+  "IBDMap: A C++ and python tool testing genome-wide for enrichment of IBD sharing between pairs of cases and case-control pairs in a biobank",
+  "COMPADRE: Perl and Python tool for Pedigree reconstruction and the identification of the maximum unrelated set",
+]
+
+[[params.experience.items]]
+company = "Department of Chemistry: North Carolina State University"
+companyUrl = "https://www.ncsu.edu/"
+mentors = "Christian Melander, PhD"
+[[params.experience.items.jobs]]
+name = "Undergraduate Student Researcher"
+date = "Aug 2018 - Aug 2019"
+content = ""
+projects = [
+  "Meridianin D Analogues Display Antibiofilm Activity against MRSA and Increase Colistin Efficacy in Gram-Negative Bacteria",
+]
+
+[params.education]
+enable = true
+[[params.education.items]]
+title = "PhD in human genetics"
+school = { name = "Vanderbilt University", url = "https://www.vanderbilt.edu/" }
+date = "Aug 2019 - present"
+[[params.education.items]]
+title = "B.S. in Chemistry"
+school = { name = "North Carolina State University", url = "https://www.ncsu.edu/" }
+date = "Aug 2014  - May 2018"
+[[params.education.items]]
+title = "B.S. in Biochemistry"
+school = { name = "North Carolina State University", url = "https://www.ncsu.edu/" }
+date = "Aug 2016  - May 2019"
+
+[params.projects]
+enable = true
+title = "Publications"
+[[params.projects.items]]
+title = "Common variant approaches to study Mendelian disease gene function identify novel phenome and pathways associated with PLOD3"
+authors = "Alexandra Scalici, James T Baker, Freida Blostein, Megan Shuey, Dharmendra Choudhary, Ela W Knapik, David C Samuels, Jennifer E Below, Lisa Bastarache, Tyne W Miller-Fleming, Nancy J Cox"
+content = "MedRxiv 2025"
+[params.projects.items.featured]
+name = "Link"
+link = "https://doi.org/10.1101/2025.11.25.25340832"
+
+[[params.projects.items]]
+title = "Genome sequencing of 35,024 predominantly African ancestry persons addresses gaps in genomics and healthcare"
+authors = "Cecile Avery, Mojgan Babanejad, James Baker, Xavier Bledsoe, Freida Blostein, Robert W Corty, Kimberlyn Ellis, Adriana M Hung, Allison Lake, John Shelley, Quanhu Sheng, Vanderbilt University Medical Center and Alliance for Genomic Discovery Investigators, Melinda Aldrich, Melissa Basford, Lisa Bastarache, Jennifer Below, Alexander G Bick, Peter Embi, QiPing Feng, Eric Gamazon, Lide Han, Jibril Hirbo, Kayla Marginean, Jonathan Mosley, Jill Pulley, Dan M. Roden, Douglas M Ruderfer, Megan Shuey, Yu Shyr, C Michael Stein, Colin Walsh, Consuelo Wilkins"
+content = "MedRxiv 2025"
+[params.projects.items.featured]
+name = "Link"
+link = "https://doi.org/10.1101/2025.10.30.25338549"
+
+
+[[params.projects.items]]
+title = "COMPADRE: Combined pedigree-aware distant relatedness estimation for improved pedigree reconstruction"
+authors = "Evans GF, Baker JT, Petty LE, Petty AS, Polikowsky HG, Bohlender RJ, Chen HH, Chou CY, Viljoen KZ, Beilby JM, Kraft SJ, Zhu W, Landman JM, Morrow AR, Bian D, Scartozzi AC, Huff CD, Below JE"
+content = "American Journal of Human Genetics, 2025"
+[params.projects.items.featured]
+name = "Link"
+link = "https://doi.org/10.1016/j.ajhg.2025.09.011"
+
+[params.contact]
+enable = true
+content = "Feel free to reach out for collaborations or inquiries!"
+btnName = "Contact Me"
+btnLink = "mailto:youremail@example.com"
+# [params.contact.formspree]
+#   enable = true
+#   formId = "yourid"
+
+[params.footer]
+[params.footer.socialNetworks]
+github = "https://github.com/yourusername"
+linkedin = "https://linkedin.com/in/yourusername"
+
+[menu]
+[[menu.main]]
+identifier = "publications"
+name = "Publications"
+url = "/#projects"
+weight = 1
+[[menu.main]]
+identifier = "cv"
+name = "CV"
+url = "/cv"
+weight = 2

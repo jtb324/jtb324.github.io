@@ -1,0 +1,112 @@
+{{ if .Site.Params.projects.enable | default false }}
+<section id="projects" class="py-5">
+    <div class="container">
+        <h3 class="text-center">{{ .Site.Params.projects.title | default "Projects" }}</h3>
+        <div class="row justify-content-center py-3">
+            {{/*  Params defined projects  */}}
+            {{ range .Site.Params.projects.items }}
+            <div class="col-12 p-0">
+                <div class="row align-items-center justify-content-center m-1 mb-2">
+                    <div class="col-md-9">
+                        <div class="card publication-card h-100" title="{{ .title }}">
+                            <div class="card-body">
+                                <div class="d-flex align-items-start">
+                                    <div class="me-3 mt-1 text-primary">
+                                        <i class="far fa-file-alt fa-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="card-title mb-1">
+                                            {{ if .url }}
+                                            <a href="{{ .url }}" target="_blank" class="text-decoration-none text-reset">
+                                                {{ .title }}
+                                            </a>
+                                            {{ else }}
+                                                {{ .title }}
+                                            {{ end }}
+                                        </h5>
+                                        
+                                        {{ if .authors }}
+                                        <div class="text-muted mb-2" style="font-size: 0.9rem;">
+                                            {{ .authors }}
+                                        </div>
+                                        {{ end }}
+
+                                        <div class="card-text text-secondary small">
+                                            {{ .content | markdownify }}
+                                        </div>
+                                        
+                                        {{/* Buttons (PDF/Link) - Kept minimalist as badges/small buttons */}}
+                                        <div class="mt-2">
+                                            {{ range .links }}
+                                            <a href="{{ .url }}" class="btn btn-outline-secondary btn-sm me-2 py-0 px-2" style="font-size: 0.8rem;" target="_blank">
+                                                {{/* Use text instead of icon if preferred, or keep icon */}}
+                                                PDF
+                                            </a>
+                                            {{ end }}
+                                            {{ if .featured }}
+                                            <a href="{{ .featured.link }}" class="btn btn-outline-primary btn-sm me-2 py-0 px-2" style="font-size: 0.8rem;" target="_blank">
+                                                DOI
+                                            </a>
+                                            {{ end }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+
+            {{/*  Markdown content defined projects  */}}
+            {{ range ( where .Site.RegularPages "Type" "projects" ) }}
+            {{ if .Params.showInHome | default true }}
+            <div class="col-12 p-0">
+                <div class="row align-items-center justify-content-center m-1 mb-2">
+                    <div class="col-md-9">
+                        <div class="card publication-card h-100" title="{{ .Title }}">
+                            <div class="card-body">
+                                <div class="d-flex align-items-start">
+                                    <div class="me-3 mt-1 text-primary">
+                                        <i class="far fa-file-alt fa-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="card-title mb-1">
+                                            <a href="{{ .RelPermalink }}" class="text-decoration-none text-reset">
+                                                {{ .Title }}
+                                            </a>
+                                        </h5>
+                                        
+                                        {{ if .Params.authors }}
+                                        <div class="text-muted mb-2" style="font-size: 0.9rem;">
+                                            {{ .Params.authors }}
+                                        </div>
+                                        {{ end }}
+
+                                        <div class="card-text text-secondary small">
+                                            {{ .Summary | truncate 300 | safeHTML }}
+                                        </div>
+                                        
+                                        <div class="mt-2">
+                                            {{ range .Params.links }}
+                                            <a href="{{ .url }}" class="btn btn-outline-secondary btn-sm me-2 py-0 px-2" style="font-size: 0.8rem;" target="_blank">
+                                                PDF
+                                            </a>
+                                            {{ end }}
+                                            <a href="{{ .RelPermalink }}" class="btn btn-outline-primary btn-sm me-2 py-0 px-2" style="font-size: 0.8rem;">
+                                                Details
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

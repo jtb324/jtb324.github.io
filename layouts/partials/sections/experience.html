@@ -1,0 +1,102 @@
+{{ if .Site.Params.experience.enable | default false }}
+<section id="experience" class="py-5">
+    <div class="container">
+        <h3 class="text-center">{{ .Site.Params.experience.title | default "Experience" }}</h3>
+        <div class="row justify-content-center py-5">
+            {{ range .Site.Params.experience.items }}
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    <div class="col-md-9">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                {{ $company := .company }}
+                                {{ $companyUrl := .companyUrl }}
+                                {{ $job := index .jobs 0 }} 
+                                {{ $mentors := .mentors }}
+                                
+                                <div class="float-end">
+                                   <small>{{ $job.date }}</small>
+                                </div>
+
+                                {{/* Match Education Card: Title is the Degree/Job */}}
+                                <h5 class="card-title">{{ $job.name }}</h5>
+
+                                {{/* Match Education Card: Subtitle is the School/Company */}}
+                                {{ if $companyUrl }}
+                                <a href="{{ $companyUrl }}" target="_blank" class="text-decoration-none">
+                                    <h6>{{ $company }}</h6>
+                                </a>
+                                {{ else }}
+                                    <h6>{{ $company }}</h6>
+                                {{ end }}
+
+                                {{/* Mentors Section */}}
+                                {{ if $mentors }}
+                                <div class="py-1">
+                                    <strong>Mentors:</strong> {{ $mentors }}
+                                </div>
+                                {{ end }}
+
+                                {{/* Content */}}
+                                <div class="py-1 experience-content">
+                                    {{ $job.content | markdownify }}
+                                </div>
+
+                                {{/* Projects Section */}}
+                                {{ if $job.projects }}
+                                <div class="py-1 projects-list">
+                                    <div class="fst-italic">Projects:</div>
+                                    <ul class="mb-0" style="color: var(--text-secondary-color);">
+                                        {{ range $job.projects }}
+                                        <li>{{ . | markdownify }}</li>
+                                        {{ end }}
+                                    </ul>
+                                </div>
+                                {{ end }}
+
+                                {{/* Handle multiple jobs if they exist */}}
+                                {{ if gt (len .jobs) 1 }}
+                                    {{ range $index, $innerJob := .jobs }}
+                                        {{ if ne $index 0 }}
+                                        <hr class="my-3">
+                                        <div class="float-end">
+                                            <small>{{ $innerJob.date }}</small>
+                                        </div>
+                                        <h5 class="card-title">{{ $innerJob.name }}</h5>
+                                        <div class="py-1 experience-content">
+                                            {{ $innerJob.content | markdownify }}
+                                        </div>
+                                        {{ if $innerJob.projects }}
+                                        <div class="py-1 projects-list">
+                                            <div class="fst-italic">Projects:</div>
+                                            <ul class="mb-0" style="color: var(--text-secondary-color);">
+                                                {{ range $innerJob.projects }}
+                                                <li>{{ . | markdownify }}</li>
+                                                {{ end }}
+                                            </ul>
+                                        </div>
+                                        {{ end }}
+                                        {{ end }}
+                                    {{ end }}
+                                {{ end }}
+
+                                {{ if $job.featuredItems }}
+                                    <div class="mt-2">
+                                        {{ range $job.featuredItems.fontAwesomeIcons }}
+                                            <a href="{{ .url }}" target="_blank" class="me-2 text-decoration-none">
+                                                <i class="{{ .icon }}"></i>
+                                            </a>
+                                        {{ end }}
+                                    </div>
+                                {{ end }}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
