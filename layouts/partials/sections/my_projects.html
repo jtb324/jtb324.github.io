@@ -1,0 +1,72 @@
+{{ if .Site.Params.my_projects.enable | default false }}
+<section id="my_projects" class="py-5">
+    <div class="container">
+        <h3 class="text-center">{{ .Site.Params.my_projects.title | default "Software Projects" }}</h3>
+        <div class="row justify-content-center px-3 px-md-5">
+            {{ range .Site.Params.my_projects.items }}
+            <div class="col-lg-6 col-md-6 my-3 d-flex">
+                <div class="card my-3 w-100 flex-column" style="border-radius: 1.5rem; overflow: hidden;">
+                    {{ if .image }}
+                    <div class="card-img-top-container" style="background-color: #f8f9fa; height: 250px; display: flex; align-items: center; justify-content: center;">
+                        <img class="card-img-top" src="{{ .image }}" alt="{{ .title }}" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;">
+                    </div>
+                    {{ else }}
+                    <div class="card-img-top-container placeholder-image d-flex align-items-center justify-content-center" style="height: 250px; background-color: #e9ecef; color: #adb5bd;">
+                        <i class="fas fa-project-diagram fa-3x"></i>
+                    </div>
+                    {{ end }}
+                    <div class="card-body bg-transparent p-3 d-flex flex-column">
+                        <h5 class="card-title bg-transparent mt-1">{{ .title }}</h5>
+                        <div class="card-text bg-transparent secondary-font flex-grow-1">
+                            {{ .description }}
+                        </div>
+                        {{ if .contributions }}
+                        <div class="mt-3">
+                            <h6 class="fst-italic" style="font-size: 0.95rem;">Contributions:</h6>
+                            <ul class="mb-0 small text-muted" style="padding-left: 1.2rem;">
+                                {{ range .contributions }}
+                                <li>{{ . }}</li>
+                                {{ end }}
+                            </ul>
+                        </div>
+                        {{ end }}
+                    </div>
+                    <div class="card-footer py-3 bg-transparent border-0 mt-auto">
+                        {{ if .github }}
+                        <span class="m-1 mx-2">
+                            <a href="{{ .github }}" target="_blank" title="GitHub Repo" class="text-decoration-none">
+                                <i class="fab fa-github fa-lg"></i>
+                            </a>
+                        </span>
+                        {{ end }}
+                        {{ if .documentation }}
+                        <span class="m-1 mx-2">
+                            <a href="{{ .documentation }}" target="_blank" title="Documentation" class="text-decoration-none">
+                                <i class="fas fa-book fa-lg"></i>
+                            </a>
+                        </span>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+<style>
+    #my_projects .card {
+        background-color: var(--secondary-color) !important;
+        box-shadow: 0px 8px 56px rgb(15 80 100 / 16%);
+        transition: transform 0.3s, box-shadow 0.3s;
+        border: 2px solid var(--text-secondary-color);
+    }
+    #my_projects .card:hover {
+        box-shadow: 0 0 11px rgb(15 80 100 / 20%);
+        transform: translateY(-7px);
+        border: 2px solid var(--primary-color);
+    }
+    #my_projects .card-img-top-container {
+        border-bottom: 1px solid rgba(0,0,0,.125);
+    }
+</style>
+{{ end }}

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<meta name="generator" content="Hugo 0.139.4"><meta charset="UTF-8">
+	<meta name="generator" content="Hugo 0.154.5"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
@@ -29,7 +29,7 @@
 
 
 
-<meta property="og:url" content="https://jtb324.github.io/">
+<meta property="og:url" content="http://localhost:1313/">
   <meta property="og:site_name" content="My Portfolio">
   <meta property="og:title" content="My Portfolio">
   <meta property="og:description" content="Researcher and Developer Portfolio">
@@ -357,7 +357,7 @@ My Portfolio
             <div class="col-sm-12 col-md-12 col-lg-4">
                 <div class="row justify-content-center">
                     <div class="col-sm-12 col-md-9 pt-5 image animate px-5 px-md-5 px-lg-0 text-center">
-                        <img src="/images/hero.svg"
+                        <img src="/images/hero-man.svg"
                             class="img-thumbnail mx-auto"
                             alt=""
                         >
@@ -714,6 +714,167 @@ My Portfolio
     </div>
 </section>
 
+
+<section id="my_projects" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Software Projects</h3>
+        <div class="row justify-content-center px-3 px-md-5">
+            
+            <div class="col-lg-6 col-md-6 my-3 d-flex">
+                <div class="card my-3 w-100 flex-column" style="border-radius: 1.5rem; overflow: hidden;">
+                    
+                    <div class="card-img-top-container" style="background-color: #f8f9fa; height: 250px; display: flex; align-items: center; justify-content: center;">
+                        <img class="card-img-top" src="/images/DRIVE_graphical_abstract_flowchart.png" alt="DRIVE" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;">
+                    </div>
+                    
+                    <div class="card-body bg-transparent p-3 d-flex flex-column">
+                        <h5 class="card-title bg-transparent mt-1">DRIVE</h5>
+                        <div class="card-text bg-transparent secondary-font flex-grow-1">
+                            Distant Relatedness for Identification and Variant Evaluation. A tool leveraging graph theory and identity-by-descent (IBD) in biobanks to identify networks of related individuals and evaluate genetic variants.
+                        </div>
+                        
+                        <div class="mt-3">
+                            <h6 class="fst-italic" style="font-size: 0.95rem;">Contributions:</h6>
+                            <ul class="mb-0 small text-muted" style="padding-left: 1.2rem;">
+                                
+                                <li>Conceptual design and programatic implementation</li>
+                                
+                                <li>Optimized memory usage and performance for large-scale biobank data with packages like duckdb and pandas</li>
+                                
+                                <li>Wrote comprehensive documentation avaliable on both GitHub and Readthedocs.</li>
+                                
+                                <li>integration tests as well as Continuous integration through GitHub actions</li>
+                                
+                                <li>performance testing and benchmarks using pytest</li>
+                                
+                                <li>Simulating test IBD data for integration tests and examples</li>
+                                
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="card-footer py-3 bg-transparent border-0 mt-auto">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/belowlab/drive" target="_blank" title="GitHub Repo" class="text-decoration-none">
+                                <i class="fab fa-github fa-lg"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://drive-ibd.readthedocs.io/en/latest/" target="_blank" title="Documentation" class="text-decoration-none">
+                                <i class="fas fa-book fa-lg"></i>
+                            </a>
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 col-md-6 my-3 d-flex">
+                <div class="card my-3 w-100 flex-column" style="border-radius: 1.5rem; overflow: hidden;">
+                    
+                    <div class="card-img-top-container" style="background-color: #f8f9fa; height: 250px; display: flex; align-items: center; justify-content: center;">
+                        <img class="card-img-top" src="/images/IBDMap_flowchart.png" alt="IBDMap" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;">
+                    </div>
+                    
+                    <div class="card-body bg-transparent p-3 d-flex flex-column">
+                        <h5 class="card-title bg-transparent mt-1">IBDMap</h5>
+                        <div class="card-text bg-transparent secondary-font flex-grow-1">
+                            A computational workflow for identity-by-descent (IBD) mapping. IBDMap identifies genomic regions associated with disease by detecting excess IBD segment sharing among affected individuals in biobank-scale datasets.
+                        </div>
+                        
+                        <div class="mt-3">
+                            <h6 class="fst-italic" style="font-size: 0.95rem;">Contributions:</h6>
+                            <ul class="mb-0 small text-muted" style="padding-left: 1.2rem;">
+                                
+                                <li>restructuring &amp; refactoring of python IBDreduce code to PDM build system for reproducible installs</li>
+                                
+                                <li>Containerized application using a multi-stage docker build</li>
+                                
+                                <li>testing the build and install pipelines for the c&#43;&#43; code and the python code</li>
+                                
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="card-footer py-3 bg-transparent border-0 mt-auto">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/rjbohlender/IBDMap" target="_blank" title="GitHub Repo" class="text-decoration-none">
+                                <i class="fab fa-github fa-lg"></i>
+                            </a>
+                        </span>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 col-md-6 my-3 d-flex">
+                <div class="card my-3 w-100 flex-column" style="border-radius: 1.5rem; overflow: hidden;">
+                    
+                    <div class="card-img-top-container" style="background-color: #f8f9fa; height: 250px; display: flex; align-items: center; justify-content: center;">
+                        <img class="card-img-top" src="/images/COMPADRE_flowchart_v2.png" alt="COMPADRE" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;">
+                    </div>
+                    
+                    <div class="card-body bg-transparent p-3 d-flex flex-column">
+                        <h5 class="card-title bg-transparent mt-1">COMPADRE</h5>
+                        <div class="card-text bg-transparent secondary-font flex-grow-1">
+                            Combined pedigree-aware distant relatedness estimation for improved pedigree reconstruction. This tool leverages genome-wide IBD sharing to accurately reconstruct families even with sparse or ungenotyped individuals.
+                        </div>
+                        
+                        <div class="mt-3">
+                            <h6 class="fst-italic" style="font-size: 0.95rem;">Contributions:</h6>
+                            <ul class="mb-0 small text-muted" style="padding-left: 1.2rem;">
+                                
+                                <li>Testing the conda and docker installations</li>
+                                
+                                <li>Refactored communication between both the perl frontend and the python server to improve error handling and user experience</li>
+                                
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="card-footer py-3 bg-transparent border-0 mt-auto">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/jtb324/COMPADRE" target="_blank" title="GitHub Repo" class="text-decoration-none">
+                                <i class="fab fa-github fa-lg"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://jtb324.github.io/COMPADRE" target="_blank" title="Documentation" class="text-decoration-none">
+                                <i class="fas fa-book fa-lg"></i>
+                            </a>
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<style>
+    #my_projects .card {
+        background-color: var(--secondary-color) !important;
+        box-shadow: 0px 8px 56px rgb(15 80 100 / 16%);
+        transition: transform 0.3s, box-shadow 0.3s;
+        border: 2px solid var(--text-secondary-color);
+    }
+    #my_projects .card:hover {
+        box-shadow: 0 0 11px rgb(15 80 100 / 20%);
+        transform: translateY(-7px);
+        border: 2px solid var(--primary-color);
+    }
+    #my_projects .card-img-top-container {
+        border-bottom: 1px solid rgba(0,0,0,.125);
+    }
+</style>
 
 <section id="experience" class="py-5">
     <div class="container">
@@ -1361,18 +1522,18 @@ My Portfolio
             <div class="row justify-content-center px-md-5">
                 <div class="col-md-8 py-3">
                     <div class="text-center">
-                        Feel free to reach out
+                        Feel free to reach out directly via email:
                     </div>
                     
                     <div class="text-center pt-3">
                         <a 
                             href='
-                                    james.baker@vanderbilt.edu
+                                    mailto:james.baker@vanderbilt.edu
                                   '
                             target="_blank"
                             class="btn"
                         >
-                            Contact Me
+                            james.baker@vanderbilt.edu
                         </a>
                     </div>
                     

@@ -47,7 +47,7 @@ intro = "Hi, my name is"
 title = "James Baker"
 subtitle = "PhD Candidate & Researcher"
 content = "I am a PhD Graduate Student and software developer in Human Genetics . Welcome to my portfolio."
-image = "/images/hero.svg"
+image = "/images/hero-man.svg"
 [params.hero.bottomImage]
 enable = true
 [params.hero.button]
@@ -86,6 +86,46 @@ items = [
   "SAIGE",
   "PLINK",
   "BCFtools",
+]
+
+[params.my_projects]
+enable = true
+title = "Software Projects"
+[[params.my_projects.items]]
+title = "DRIVE"
+description = "Distant Relatedness for Identification and Variant Evaluation. A tool leveraging graph theory and identity-by-descent (IBD) in biobanks to identify networks of related individuals and evaluate genetic variants."
+image = "/images/DRIVE_graphical_abstract_flowchart.png"
+github = "https://github.com/belowlab/drive"
+documentation = "https://drive-ibd.readthedocs.io/en/latest/"
+contributions = [
+  "Conceptual design and programatic implementation",
+  "Optimized memory usage and performance for large-scale biobank data with packages like duckdb and pandas",
+  "Wrote comprehensive documentation avaliable on both GitHub and Readthedocs.",
+  "integration tests as well as Continuous integration through GitHub actions",
+  "performance testing and benchmarks using pytest",
+  "Simulating test IBD data for integration tests and examples",
+]
+
+[[params.my_projects.items]]
+title = "IBDMap"
+description = "A computational workflow for identity-by-descent (IBD) mapping. IBDMap identifies genomic regions associated with disease by detecting excess IBD segment sharing among affected individuals in biobank-scale datasets."
+image = "/images/IBDMap_flowchart.png"
+github = "https://github.com/rjbohlender/IBDMap"
+contributions = [
+  "restructuring & refactoring of python IBDreduce code to PDM build system for reproducible installs",
+  "Containerized application using a multi-stage docker build",
+  "testing the build and install pipelines for the c++ code and the python code",
+]
+
+[[params.my_projects.items]]
+title = "COMPADRE"
+description = "Combined pedigree-aware distant relatedness estimation for improved pedigree reconstruction. This tool leverages genome-wide IBD sharing to accurately reconstruct families even with sparse or ungenotyped individuals."
+image = "/images/COMPADRE_flowchart_v2.png"
+github = "https://github.com/jtb324/COMPADRE"
+documentation = "https://jtb324.github.io/COMPADRE"
+contributions = [
+  "Testing the conda and docker installations",
+  "Refactored communication between both the perl frontend and the python server to improve error handling and user experience",
 ]
 
 [params.experience]
@@ -211,9 +251,9 @@ link = "https://doi.org/10.1021/acsmedchemlett.8b00161"
 
 [params.contact]
 enable = true
-content = "Feel free to reach out"
-btnName = "Contact Me"
-btnLink = "james.baker@vanderbilt.edu"
+content = "Feel free to reach out directly via email:"
+btnName = "james.baker@vanderbilt.edu"
+btnLink = "mailto:james.baker@vanderbilt.edu"
 # [params.contact.formspree]
 #   enable = true
 #   formId = "yourid"

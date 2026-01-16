@@ -1,0 +1,23 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 145 145">
+  <!-- Background -->
+  <rect fill="#60B0C9" width="145" height="145"/>
+  
+  <!-- Shoulders / Shirt -->
+  <path d="M30 145 L30 120 Q 72.5 100 115 120 L115 145 Z" fill="#282F49"/>
+  
+  <!-- Neck -->
+  <rect x="60" y="80" width="25" height="30" fill="#E4B692"/>
+  
+  <!-- Face -->
+  <circle cx="72.5" cy="70" r="30" fill="#F1C9A5"/>
+  
+  <!-- Hair -->
+  <path d="M40 65 Q 72.5 20 105 65 L 105 55 Q 72.5 10 40 55 Z" fill="#5A3017"/>
+  
+  <!-- Eyes -->
+  <circle cx="62" cy="70" r="3" fill="#282F49"/>
+  <circle cx="83" cy="70" r="3" fill="#282F49"/>
+  
+  <!-- Mouth -->
+  <path d="M65 85 Q 72.5 90 80 85" fill="none" stroke="#E4B692" stroke-width="2"/>
+</svg>

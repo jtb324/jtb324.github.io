@@ -2,23 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My Portfolio</title>
-    <link>https://jtb324.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on My Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://jtb324.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Contact Me</title>
-      <link>https://jtb324.github.io/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jtb324.github.io/contact/</guid>
-      <description>&lt;p&gt;If you have any questions or would like to collaborate, feel free to reach out to me!&lt;/p&gt;&#xA;&lt;p&gt;You can email me at: &lt;a href=&#34;mailto:youremail@example.com&#34;&gt;youremail@example.com&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Alternatively, you can find me on:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://linkedin.com/in/yourusername&#34;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/yourusername&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Curriculum Vitae</title>
-      <link>https://jtb324.github.io/cv/</link>
+      <link>http://localhost:1313/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jtb324.github.io/cv/</guid>
+      <guid>http://localhost:1313/cv/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;&#xA;&lt;p&gt;I am a researcher and developer with a focus on&amp;hellip;&lt;/p&gt;&#xA;&lt;h2 id=&#34;experience&#34;&gt;Experience&lt;/h2&gt;&#xA;&lt;h3 id=&#34;research-assistant--university-of-x&#34;&gt;Research Assistant | University of X&lt;/h3&gt;&#xA;&lt;p&gt;&lt;em&gt;Jan 2023 - Present&lt;/em&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Developed&amp;hellip;&lt;/li&gt;&#xA;&lt;li&gt;Researched&amp;hellip;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;&#xA;&lt;h3 id=&#34;phd-in-computer-science--tech-university&#34;&gt;Ph.D. in Computer Science | Tech University&lt;/h3&gt;&#xA;&lt;p&gt;&lt;em&gt;2020 - 2024&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;bs-in-computer-science--state-college&#34;&gt;B.S. in Computer Science | State College&lt;/h3&gt;&#xA;&lt;p&gt;&lt;em&gt;2016 - 2020&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;skills&#34;&gt;Skills&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Python, PyTorch, TensorFlow&lt;/li&gt;&#xA;&lt;li&gt;Hugo, HTML/CSS, JavaScript&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
