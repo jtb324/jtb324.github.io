@@ -46,7 +46,7 @@ enable = true
 intro = "Hi, my name is"
 title = "James Baker"
 subtitle = "PhD Candidate & Researcher"
-content = "I am a PhD Graduate Student and software developer in Human Genetics . Welcome to my portfolio."
+content = "I am a PhD Graduate Student and software developer in Human Genetics. Welcome to my portfolio."
 image = "/images/hero-man.svg"
 [params.hero.bottomImage]
 enable = true
@@ -66,7 +66,7 @@ url = "https://www.linkedin.com/in/james-baker-233243339"
 [params.about]
 enable = true
 title = "About Me"
-content = "I am a PhD graduate student in the Human Genetics Program at Vanderbilt University "
+content = "I am a PhD student in the Human Genetics Program at Vanderbilt University. My research focuses on how we can leverage distant relatedness in large biobanks linked to electronic health data to explore the genetic causes of disease. To investigate this, I design workflows and software in (*mostly*) python and R for both local HPC environments and the cloud using Terra.bio. Additionally, I have an interest in how we can leverage modern high performance data science packages such as Polars and DuckDB to increase the scalability of many genomic workflows to accommodate the large biobanks such as BioVU, All of Us, and UK Biobank."
 
 [params.skills]
 enable = true
@@ -98,12 +98,12 @@ image = "/images/DRIVE_graphical_abstract_flowchart.png"
 github = "https://github.com/belowlab/drive"
 documentation = "https://drive-ibd.readthedocs.io/en/latest/"
 contributions = [
-  "Conceptual design and programatic implementation",
+  "Conceptual design and programmatic implementation",
   "Optimized memory usage and performance for large-scale biobank data with packages like duckdb and pandas",
-  "Wrote comprehensive documentation avaliable on both GitHub and Readthedocs.",
-  "integration tests as well as Continuous integration through GitHub actions",
-  "performance testing and benchmarks using pytest",
-  "Simulating test IBD data for integration tests and examples",
+  "Wrote comprehensive documentation available on both GitHub and Readthedocs.",
+  "Integration tests as well as continuous integration through GitHub actions",
+  "Performance testing and benchmarks using pytest",
+  "Simulated test IBD data for integration tests and examples",
 ]
 
 [[params.my_projects.items]]
@@ -112,9 +112,9 @@ description = "A computational workflow for identity-by-descent (IBD) mapping. I
 image = "/images/IBDMap_flowchart.png"
 github = "https://github.com/rjbohlender/IBDMap"
 contributions = [
-  "restructuring & refactoring of python IBDreduce code to PDM build system for reproducible installs",
+  "Restructured & refactored python IBDreduce code to PDM build system for reproducible installs",
   "Containerized application using a multi-stage docker build",
-  "testing the build and install pipelines for the c++ code and the python code",
+  "Tested the build and install pipelines for the c++ code and the python code",
 ]
 
 [[params.my_projects.items]]
@@ -124,7 +124,7 @@ image = "/images/COMPADRE_flowchart_v2.png"
 github = "https://github.com/jtb324/COMPADRE"
 documentation = "https://jtb324.github.io/COMPADRE"
 contributions = [
-  "Testing the conda and docker installations",
+  "Tested the conda and docker installations",
   "Refactored communication between both the perl frontend and the python server to improve error handling and user experience",
 ]
 
@@ -210,7 +210,7 @@ link = "https://doi.org/10.1016/j.jtha.2025.04.029"
 [[params.projects.items]]
 title = "Gene and phenome-based analysis of the shared genetic architecture of eye diseases"
 authors = "Scalici A, Miller-Fleming TW, Shuey MM, Baker JT, Betti M, Hirbo J, Knapik EW, Cox NJ"
-content = "American Journal of Human Genetics"
+content = "American Journal of Human Genetics (2025)"
 [params.projects.items.featured]
 name = "Link"
 link = "https://doi.org/10.1016/j.ajhg.2025.01.004"
@@ -218,16 +218,16 @@ link = "https://doi.org/10.1016/j.ajhg.2025.01.004"
 [[params.projects.items]]
 title = "Detection of distant relatedness in biobanks to identify undiagnosed cases of Mendelian disease as applied to Long QT syndrome"
 authors = "Lancaster MC, Chen HH, Shoemaker MB, Fleming MR, Strickland TL, Baker JT, Evans GF, Polikowsky HG, Samuels DC, Huff CD, Roden DM, Below JE"
-content = "Nature Communications"
+content = "Nature Communications (2025)"
 [params.projects.items.featured]
 name = "Link"
-link = "https://doi.org/10.1016/j.ajhg.2025.01.004"
+link = "https://doi.org/10.1038/s41467-024-51977-4"
 
 
 [[params.projects.items]]
 title = "Machine-learning based classification of Frontotemporal dementia in electronic health records for genetic discovery"
 authors = "Below, J., Shaw, D., Evans, G., Baker, J., Bohlender, R., Petty, A., Petty, L., Roshani, R., Lifferth, J., Bastarache, L., Naj, A., Bush, W., Darby, R., McMillan, C., Samuels, D., Huff, C"
-content = "Alzhimer's & Dementia (2023)"
+content = "Alzheimer's & Dementia (2023)"
 [params.projects.items.featured]
 name = "Link"
 link = "https://doi.org/10.1002/alz.080074"
