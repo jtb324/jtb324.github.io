@@ -127,6 +127,12 @@ contributions = [
   "Tested the conda and docker installations",
   "Refactored communication between both the perl frontend and the python server to improve error handling and user experience",
 ]
+[[params.my_projects.items]]
+title = "Pubmed RAG"
+description = "CLI TUI that allows the user to search for abstracts related to a topic of interest. Abstracts are retrieved from pubmed and then embedded with a vector database. Vector search is performed to find relevant abstracts and then an llm is used to summarize the abstracts and return results. This project uses common technologies like FastAPI, LangChain, HuggingFace (LLMs), Qdrant (for vector store), and Bubbletea (tui interface)."
+image = "/images/pubmed_llm_rag_project.png"
+github = "https://github.com/jtb324/pubmed_rag"
+
 
 [params.experience]
 enable = true
