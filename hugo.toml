@@ -47,7 +47,7 @@ intro = "Hi, my name is"
 title = "James Baker"
 subtitle = "PhD Candidate & Researcher"
 content = "I am a PhD Graduate Student and software developer in Human Genetics. Welcome to my portfolio."
-image = "/images/hero-man.svg"
+image = "/images/profile_pict.png"
 [params.hero.bottomImage]
 enable = true
 [params.hero.button]
