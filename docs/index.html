@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<meta name="generator" content="Hugo 0.154.5"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
+	<meta name="generator" content="Hugo 0.154.5"><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
@@ -29,7 +29,7 @@
 
 
 
-<meta property="og:url" content="http://localhost:1313/">
+<meta property="og:url" content="https://jtb324.github.io/">
   <meta property="og:site_name" content="My Portfolio">
   <meta property="og:title" content="My Portfolio">
   <meta property="og:description" content="Researcher and Developer Portfolio">
@@ -317,7 +317,7 @@ My Portfolio
                     PhD Candidate &amp; Researcher
                 </h2>
                 <p class="hero-content">
-                    I am a PhD Graduate Student and software developer in Human Genetics. Welcome to my portfolio.
+                    I am a PhD Graduate Student in the Human Genetics program at Vanderbilt University. Welcome to my portfolio.
                 </p>
                 <div class="row">
                     <div class="col-auto h-100">
@@ -638,7 +638,7 @@ My Portfolio
         <div class="bg-transparent row justify-content-center px-3 py-5">
             
             <div class="col-sm-12 col-md-12 col-lg-8 content">
-                I am a PhD student in the Human Genetics Program at Vanderbilt University. My research focuses on how we can leverage distant relatedness in large biobanks linked to electronic health data to explore the genetic causes of disease. To investigate this, I design workflows and software in (<em>mostly</em>) python and R for both local HPC environments and the cloud using Terra.bio. Additionally, I have an interest in how we can leverage modern high performance data science packages such as Polars and DuckDB to increase the scalability of many genomic workflows to accommodate the large biobanks such as BioVU, All of Us, and UK Biobank.
+                I am a PhD student in the Human Genetics Program at Vanderbilt University. My research focuses on how we can leverage distant relatedness in large biobanks linked to electronic health data to explore the genetic causes of disease. To investigate this, I design pipelines and software in (<em>mostly</em>) Python and R for both local HPC environments and the cloud environments to implement novel statistical methods or to efficiently scale existing methods to modern large biobanks (BioVU, All of Us, and UK Biobank). Additionally, I have an interest in how we can leverage modern high performance data science packages (such as Polars and DuckDB) and software best practices to design reliable, scalable, and maintainable research software.
 
                 
             </div>
@@ -665,6 +665,10 @@ My Portfolio
                     </li>
                     
                     <li class="list-inline-item m-2">
+                        <span class="badge bg-secondary p-3 fs-6">Go</span>
+                    </li>
+                    
+                    <li class="list-inline-item m-2">
                         <span class="badge bg-secondary p-3 fs-6">Pandas</span>
                     </li>
                     
@@ -674,6 +678,14 @@ My Portfolio
                     
                     <li class="list-inline-item m-2">
                         <span class="badge bg-secondary p-3 fs-6">DuckDB</span>
+                    </li>
+                    
+                    <li class="list-inline-item m-2">
+                        <span class="badge bg-secondary p-3 fs-6">Terra.bio</span>
+                    </li>
+                    
+                    <li class="list-inline-item m-2">
+                        <span class="badge bg-secondary p-3 fs-6">All of Us</span>
                     </li>
                     
                     <li class="list-inline-item m-2">
@@ -708,6 +720,10 @@ My Portfolio
                         <span class="badge bg-secondary p-3 fs-6">BCFtools</span>
                     </li>
                     
+                    <li class="list-inline-item m-2">
+                        <span class="badge bg-secondary p-3 fs-6">Tractor</span>
+                    </li>
+                    
                 </ul>
             </div>
         </div>
@@ -739,9 +755,9 @@ My Portfolio
                                 
                                 <li>Conceptual design and programmatic implementation</li>
                                 
-                                <li>Optimized memory usage and performance for large-scale biobank data with packages like duckdb and pandas</li>
+                                <li>Optimized memory usage and performance for large-scale biobank data with packages like DuckDB and Pandas</li>
                                 
-                                <li>Wrote comprehensive documentation available on both GitHub and Readthedocs.</li>
+                                <li>Wrote comprehensive documentation available on both GitHub and Read the Docs.</li>
                                 
                                 <li>Integration tests as well as continuous integration through GitHub actions</li>
                                 
@@ -789,11 +805,11 @@ My Portfolio
                             <h6 class="fst-italic" style="font-size: 0.95rem;">Contributions:</h6>
                             <ul class="mb-0 small text-muted" style="padding-left: 1.2rem;">
                                 
-                                <li>Restructured &amp; refactored python IBDreduce code to PDM build system for reproducible installs</li>
+                                <li>Restructured &amp; refactored Python IBDreduce code to use modern Python features and idioms</li>
                                 
-                                <li>Containerized application using a multi-stage docker build</li>
+                                <li>Containerized application using a multi-stage Docker build</li>
                                 
-                                <li>Tested the build and install pipelines for the c&#43;&#43; code and the python code</li>
+                                <li>Tested the build and install pipelines for the C&#43;&#43; code and the Python code to ensure performance on different CPU architectures</li>
                                 
                             </ul>
                         </div>
@@ -829,9 +845,13 @@ My Portfolio
                             <h6 class="fst-italic" style="font-size: 0.95rem;">Contributions:</h6>
                             <ul class="mb-0 small text-muted" style="padding-left: 1.2rem;">
                                 
-                                <li>Tested the conda and docker installations</li>
+                                <li>Tested the conda and Docker installations</li>
                                 
-                                <li>Refactored communication between both the perl frontend and the python server to improve error handling and user experience</li>
+                                <li>Refactored logging interface between both the Perl frontend and the Python server to improve error handling and user experience</li>
+                                
+                                <li>Designed and implemented unit and integration testing framework using the Perl &#39;prove&#39; tool and implemented CI/CD to automatically run all test</li>
+                                
+                                <li>Reduced memory footprint of program to increase runtime efficiency</li>
                                 
                             </ul>
                         </div>
@@ -860,13 +880,13 @@ My Portfolio
                 <div class="card my-3 w-100 flex-column" style="border-radius: 1.5rem; overflow: hidden;">
                     
                     <div class="card-img-top-container" style="background-color: #f8f9fa; height: 250px; display: flex; align-items: center; justify-content: center;">
-                        <img class="card-img-top" src="/images/pubmed_llm_rag_project.png" alt="Pubmed RAG" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;">
+                        <img class="card-img-top" src="/images/pubmed_llm_rag_project.png" alt="PubMed RAG" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;">
                     </div>
                     
                     <div class="card-body bg-transparent p-3 d-flex flex-column">
-                        <h5 class="card-title bg-transparent mt-1">Pubmed RAG</h5>
+                        <h5 class="card-title bg-transparent mt-1">PubMed RAG</h5>
                         <div class="card-text bg-transparent secondary-font flex-grow-1">
-                            CLI TUI that allows the user to search for abstracts related to a topic of interest. Abstracts are retrieved from pubmed and then embedded with a vector database. Vector search is performed to find relevant abstracts and then an llm is used to summarize the abstracts and return results. This project uses common technologies like FastAPI, LangChain, HuggingFace (LLMs), Qdrant (for vector store), and Bubbletea (tui interface).
+                            CLI TUI that allows the user to search for abstracts related to a topic of interest. Abstracts are retrieved from PubMed and then embedded with a vector database. Vector search is performed to find relevant abstracts and then an LLM is used to summarize the abstracts and return results. This project uses common technologies like FastAPI, LangChain, HuggingFace (LLMs), Qdrant (for vector store), and Bubble Tea (TUI interface).
                         </div>
                         
                     </div>
@@ -950,11 +970,15 @@ My Portfolio
                                     <div class="fst-italic">Projects:</div>
                                     <ul class="mb-0" style="color: var(--text-secondary-color);">
                                         
-                                        <li>DRIVE: Python CLI tool leveraging graph theory and identity-by-descent (IBD) in biobanks to identify networks of related individuals</li>
+                                        <li>Executed scalable cloud-based pipelines (WDL/Terra.bio) for quality control, pedigree reconstruction, and relatedness analysis in whole genome sequencing data for 35,024 predominantly African ancestry individuals using PLINK and BCFtools. Also contributed local ancestry informed GWAS for white and red blood cell count in this cohort.</li>
                                         
-                                        <li>IBDMap: A C++ and python tool testing genome-wide for enrichment of IBD sharing between pairs of cases and case-control pairs in a biobank</li>
+                                        <li>Orchestrated large-scale local ancestry inference, IBD segment detection, and comprehensive variant annotation (using VEP) for 250,000 WGS BioVU participants.</li>
                                         
-                                        <li>COMPADRE: Perl and Python tool for Pedigree reconstruction and the identification of the maximum unrelated set</li>
+                                        <li>Developed scalable software to optimize IBD mapping within the 93,000 BioVU participants with genotyping enabling large-scale phenome-wide analysis in electronic health records.</li>
+                                        
+                                        <li>Identified the background haplotype harboring a rare variant in RHO that is causal for Retinitis Pigmentosa by leveraging multi-individual IBD clustering with local ancestry data</li>
+                                        
+                                        <li>Conducted GWAS analysis using SAIGE for Von-Willebrand factor in 70,000 BioVU participants contributing to large multi-institution meta-analysis</li>
                                         
                                     </ul>
                                 </div>
@@ -1049,9 +1073,9 @@ My Portfolio
                         <div class="card">
                             <div class="card-body">
                                 <div class="float-end">
-                                    <small>Aug 2019 - present</small>
+                                    <small>Aug 2019 - Present</small>
                                 </div>
-                                <h5 class="card-title">PhD in human genetics</h5>
+                                <h5 class="card-title">PhD in Human Genetics</h5>
                                 
                                 
                                 <a href="https://www.vanderbilt.edu/" target="_blank">
@@ -1081,7 +1105,7 @@ My Portfolio
                         <div class="card">
                             <div class="card-body">
                                 <div class="float-end">
-                                    <small>Aug 2014  - May 2018</small>
+                                    <small>Aug 2014 - May 2018</small>
                                 </div>
                                 <h5 class="card-title">B.S. in Chemistry</h5>
                                 
@@ -1113,7 +1137,7 @@ My Portfolio
                         <div class="card">
                             <div class="card-body">
                                 <div class="float-end">
-                                    <small>Aug 2016  - May 2019</small>
+                                    <small>Aug 2016 - May 2019</small>
                                 </div>
                                 <h5 class="card-title">B.S. in Biochemistry</h5>
                                 
@@ -1151,6 +1175,138 @@ My Portfolio
             <div class="col-12 p-0">
                 <div class="row align-items-center justify-content-center m-1 mb-2">
                     <div class="col-md-9">
+                        <div class="card publication-card" title="DRIVE v3: command line application for identity-by-descent haplotype clustering in large biobank-scale data">
+                            <div class="card-body">
+                                <div class="d-flex align-items-start">
+                                    <div class="me-3 mt-1 text-primary">
+                                        <i class="far fa-file-alt fa-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="card-title mb-1">
+                                            
+                                                DRIVE v3: command line application for identity-by-descent haplotype clustering in large biobank-scale data
+                                            
+                                        </h5>
+                                        
+                                        
+                                        <div class="text-muted mb-2" style="font-size: 0.9rem;">
+                                            James T Baker, Hung-Hsin Chen, Grahame F Evans, Alyssa C Scartozzi, Ryan J Bohlender, Chad D Huff, Quinn S Wells, David C Samuels, Jennifer E Below
+                                        </div>
+                                        
+
+                                        <div class="card-text text-secondary small">
+                                            Genetic Epidemiology 2026
+                                        </div>
+                                        
+                                        
+                                        <div class="mt-2 d-flex align-items-center flex-wrap">
+                                            
+                                            
+                                            
+                                            <span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle me-2 py-1 px-2" style="font-size: 0.75rem; font-weight: 500;">
+                                                Revise &amp; Resubmit
+                                            </span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 p-0">
+                <div class="row align-items-center justify-content-center m-1 mb-2">
+                    <div class="col-md-9">
+                        <div class="card publication-card" title="IBDMap: biobank-scale identity-by-descent mapping software for dichotomous traits.">
+                            <div class="card-body">
+                                <div class="d-flex align-items-start">
+                                    <div class="me-3 mt-1 text-primary">
+                                        <i class="far fa-file-alt fa-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="card-title mb-1">
+                                            
+                                                IBDMap: biobank-scale identity-by-descent mapping software for dichotomous traits.
+                                            
+                                        </h5>
+                                        
+                                        
+                                        <div class="text-muted mb-2" style="font-size: 0.9rem;">
+                                            Ryan J. Bohlender*, Grahame F Evans*, James T Baker*, Joshua M Landman, Elizabeth G Frankel, Autumn R Morrow, Lauren E Petty, Alexander S Petty, Lisa A Bastarache, Hung-Hsin Chen, Matthew S Zawistowski, David C Samuels, Quinn S Wells, Jennifer E Below, Chad D Huff
+                                        </div>
+                                        
+
+                                        <div class="card-text text-secondary small">
+                                            
+                                        </div>
+                                        
+                                        
+                                        <div class="mt-2 d-flex align-items-center flex-wrap">
+                                            
+                                            
+                                            
+                                            <span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle me-2 py-1 px-2" style="font-size: 0.75rem; font-weight: 500;">
+                                                Revise &amp; Resubmit
+                                            </span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 p-0">
+                <div class="row align-items-center justify-content-center m-1 mb-2">
+                    <div class="col-md-9">
+                        <div class="card publication-card" title="Out of sight, out of mind: Characterizing the variant landscape of ALPL and associated medical records in a clinical cohort enriched for African ancestry highlights the diagnostic failure of HPP in this population">
+                            <div class="card-body">
+                                <div class="d-flex align-items-start">
+                                    <div class="me-3 mt-1 text-primary">
+                                        <i class="far fa-file-alt fa-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="card-title mb-1">
+                                            
+                                                Out of sight, out of mind: Characterizing the variant landscape of ALPL and associated medical records in a clinical cohort enriched for African ancestry highlights the diagnostic failure of HPP in this population
+                                            
+                                        </h5>
+                                        
+                                        
+                                        <div class="text-muted mb-2" style="font-size: 0.9rem;">
+                                            Kimberlyn A. Ellis, Wanying Zhu, James T. Baker, Lauren E. Petty, Dayi Bian, Elena Evans, Hannah G. Polikowsky, Margo Black, Emily Shardelow, E. Mason Campbell, La Toya Hannah, Alexander Petty, Jennifer E. Below, Kathryn M. Dahir
+                                        </div>
+                                        
+
+                                        <div class="card-text text-secondary small">
+                                            MedRxiv 2025
+                                        </div>
+                                        
+                                        
+                                        <div class="mt-2 d-flex align-items-center flex-wrap">
+                                            
+                                            
+                                            
+                                            <span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle me-2 py-1 px-2" style="font-size: 0.75rem; font-weight: 500;">
+                                                Under Review
+                                            </span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 p-0">
+                <div class="row align-items-center justify-content-center m-1 mb-2">
+                    <div class="col-md-9">
                         <div class="card publication-card" title="Common variant approaches to study Mendelian disease gene function identify novel phenome and pathways associated with PLOD3">
                             <div class="card-body">
                                 <div class="d-flex align-items-start">
@@ -1175,12 +1331,17 @@ My Portfolio
                                         </div>
                                         
                                         
-                                        <div class="mt-2">
+                                        <div class="mt-2 d-flex align-items-center flex-wrap">
                                             
                                             
                                             <a href="https://doi.org/10.1101/2025.11.25.25340832" class="btn btn-outline-primary btn-sm me-2 py-0 px-2" style="font-size: 0.8rem;" target="_blank">
                                                 DOI
                                             </a>
+                                            
+                                            
+                                            <span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle me-2 py-1 px-2" style="font-size: 0.75rem; font-weight: 500;">
+                                                Revise &amp; Resubmit
+                                            </span>
                                             
                                         </div>
                                     </div>
@@ -1218,12 +1379,17 @@ My Portfolio
                                         </div>
                                         
                                         
-                                        <div class="mt-2">
+                                        <div class="mt-2 d-flex align-items-center flex-wrap">
                                             
                                             
                                             <a href="https://doi.org/10.1101/2025.10.30.25338549" class="btn btn-outline-primary btn-sm me-2 py-0 px-2" style="font-size: 0.8rem;" target="_blank">
                                                 DOI
                                             </a>
+                                            
+                                            
+                                            <span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle me-2 py-1 px-2" style="font-size: 0.75rem; font-weight: 500;">
+                                                Revise &amp; Resubmit
+                                            </span>
                                             
                                         </div>
                                     </div>
@@ -1261,12 +1427,13 @@ My Portfolio
                                         </div>
                                         
                                         
-                                        <div class="mt-2">
+                                        <div class="mt-2 d-flex align-items-center flex-wrap">
                                             
                                             
                                             <a href="https://doi.org/10.1016/j.ajhg.2025.09.011" class="btn btn-outline-primary btn-sm me-2 py-0 px-2" style="font-size: 0.8rem;" target="_blank">
                                                 DOI
                                             </a>
+                                            
                                             
                                         </div>
                                     </div>
@@ -1304,12 +1471,13 @@ My Portfolio
                                         </div>
                                         
                                         
-                                        <div class="mt-2">
+                                        <div class="mt-2 d-flex align-items-center flex-wrap">
                                             
                                             
                                             <a href="https://doi.org/10.1016/j.jtha.2025.04.029" class="btn btn-outline-primary btn-sm me-2 py-0 px-2" style="font-size: 0.8rem;" target="_blank">
                                                 DOI
                                             </a>
+                                            
                                             
                                         </div>
                                     </div>
@@ -1347,12 +1515,13 @@ My Portfolio
                                         </div>
                                         
                                         
-                                        <div class="mt-2">
+                                        <div class="mt-2 d-flex align-items-center flex-wrap">
                                             
                                             
                                             <a href="https://doi.org/10.1016/j.ajhg.2025.01.004" class="btn btn-outline-primary btn-sm me-2 py-0 px-2" style="font-size: 0.8rem;" target="_blank">
                                                 DOI
                                             </a>
+                                            
                                             
                                         </div>
                                     </div>
@@ -1390,12 +1559,13 @@ My Portfolio
                                         </div>
                                         
                                         
-                                        <div class="mt-2">
+                                        <div class="mt-2 d-flex align-items-center flex-wrap">
                                             
                                             
                                             <a href="https://doi.org/10.1038/s41467-024-51977-4" class="btn btn-outline-primary btn-sm me-2 py-0 px-2" style="font-size: 0.8rem;" target="_blank">
                                                 DOI
                                             </a>
+                                            
                                             
                                         </div>
                                     </div>
@@ -1433,12 +1603,13 @@ My Portfolio
                                         </div>
                                         
                                         
-                                        <div class="mt-2">
+                                        <div class="mt-2 d-flex align-items-center flex-wrap">
                                             
                                             
                                             <a href="https://doi.org/10.1002/alz.080074" class="btn btn-outline-primary btn-sm me-2 py-0 px-2" style="font-size: 0.8rem;" target="_blank">
                                                 DOI
                                             </a>
+                                            
                                             
                                         </div>
                                     </div>
@@ -1452,7 +1623,7 @@ My Portfolio
             <div class="col-12 p-0">
                 <div class="row align-items-center justify-content-center m-1 mb-2">
                     <div class="col-md-9">
-                        <div class="card publication-card" title="2-aminobenzimidazoles as antibiofilm agents against salmonella enterica serovar typhimurium">
+                        <div class="card publication-card" title="2-aminobenzimidazoles as antibiofilm agents against Salmonella enterica serovar Typhimurium">
                             <div class="card-body">
                                 <div class="d-flex align-items-start">
                                     <div class="me-3 mt-1 text-primary">
@@ -1461,7 +1632,7 @@ My Portfolio
                                     <div>
                                         <h5 class="card-title mb-1">
                                             
-                                                2-aminobenzimidazoles as antibiofilm agents against salmonella enterica serovar typhimurium
+                                                2-aminobenzimidazoles as antibiofilm agents against Salmonella enterica serovar Typhimurium
                                             
                                         </h5>
                                         
@@ -1476,12 +1647,13 @@ My Portfolio
                                         </div>
                                         
                                         
-                                        <div class="mt-2">
+                                        <div class="mt-2 d-flex align-items-center flex-wrap">
                                             
                                             
                                             <a href="https://doi.org/10.1039/c8md00298c" class="btn btn-outline-primary btn-sm me-2 py-0 px-2" style="font-size: 0.8rem;" target="_blank">
                                                 DOI
                                             </a>
+                                            
                                             
                                         </div>
                                     </div>
@@ -1519,12 +1691,13 @@ My Portfolio
                                         </div>
                                         
                                         
-                                        <div class="mt-2">
+                                        <div class="mt-2 d-flex align-items-center flex-wrap">
                                             
                                             
                                             <a href="https://doi.org/10.1021/acsmedchemlett.8b00161" class="btn btn-outline-primary btn-sm me-2 py-0 px-2" style="font-size: 0.8rem;" target="_blank">
                                                 DOI
                                             </a>
+                                            
                                             
                                         </div>
                                     </div>

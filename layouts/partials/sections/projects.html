@@ -36,7 +36,7 @@
                                         </div>
                                         
                                         {{/* Buttons (PDF/Link) - Kept minimalist as badges/small buttons */}}
-                                        <div class="mt-2">
+                                        <div class="mt-2 d-flex align-items-center flex-wrap">
                                             {{ range .links }}
                                             <a href="{{ .url }}" class="btn btn-outline-secondary btn-sm me-2 py-0 px-2" style="font-size: 0.8rem;" target="_blank">
                                                 {{/* Use text instead of icon if preferred, or keep icon */}}
@@ -47,6 +47,11 @@
                                             <a href="{{ .featured.link }}" class="btn btn-outline-primary btn-sm me-2 py-0 px-2" style="font-size: 0.8rem;" target="_blank">
                                                 DOI
                                             </a>
+                                            {{ end }}
+                                            {{ if .status }}
+                                            <span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle me-2 py-1 px-2" style="font-size: 0.75rem; font-weight: 500;">
+                                                {{ .status }}
+                                            </span>
                                             {{ end }}
                                         </div>
                                     </div>
@@ -87,7 +92,7 @@
                                             {{ .Summary | truncate 300 | safeHTML }}
                                         </div>
                                         
-                                        <div class="mt-2">
+                                        <div class="mt-2 d-flex align-items-center flex-wrap">
                                             {{ range .Params.links }}
                                             <a href="{{ .url }}" class="btn btn-outline-secondary btn-sm me-2 py-0 px-2" style="font-size: 0.8rem;" target="_blank">
                                                 PDF
@@ -96,6 +101,11 @@
                                             <a href="{{ .RelPermalink }}" class="btn btn-outline-primary btn-sm me-2 py-0 px-2" style="font-size: 0.8rem;">
                                                 Details
                                             </a>
+                                            {{ if .Params.status }}
+                                            <span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle me-2 py-1 px-2" style="font-size: 0.75rem; font-weight: 500;">
+                                                {{ .Params.status }}
+                                            </span>
+                                            {{ end }}
                                         </div>
                                     </div>
                                 </div>

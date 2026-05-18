@@ -46,7 +46,7 @@ enable = true
 intro = "Hi, my name is"
 title = "James Baker"
 subtitle = "PhD Candidate & Researcher"
-content = "I am a PhD Graduate Student and software developer in Human Genetics. Welcome to my portfolio."
+content = "I am a PhD Graduate Student in the Human Genetics program at Vanderbilt University. Welcome to my portfolio."
 image = "/images/profile_pict.png"
 [params.hero.bottomImage]
 enable = true
@@ -66,7 +66,7 @@ url = "https://www.linkedin.com/in/james-baker-233243339"
 [params.about]
 enable = true
 title = "About Me"
-content = "I am a PhD student in the Human Genetics Program at Vanderbilt University. My research focuses on how we can leverage distant relatedness in large biobanks linked to electronic health data to explore the genetic causes of disease. To investigate this, I design workflows and software in (*mostly*) python and R for both local HPC environments and the cloud using Terra.bio. Additionally, I have an interest in how we can leverage modern high performance data science packages such as Polars and DuckDB to increase the scalability of many genomic workflows to accommodate the large biobanks such as BioVU, All of Us, and UK Biobank."
+content = "I am a PhD student in the Human Genetics Program at Vanderbilt University. My research focuses on how we can leverage distant relatedness in large biobanks linked to electronic health data to explore the genetic causes of disease. To investigate this, I design pipelines and software in (*mostly*) Python and R for both local HPC environments and the cloud environments to implement novel statistical methods or to efficiently scale existing methods to modern large biobanks (BioVU, All of Us, and UK Biobank). Additionally, I have an interest in how we can leverage modern high performance data science packages (such as Polars and DuckDB) and software best practices to design reliable, scalable, and maintainable research software."
 
 [params.skills]
 enable = true
@@ -75,9 +75,12 @@ content = "Here are some of the technologies I work with:"
 items = [
   "Python",
   "R",
+  "Go",
   "Pandas",
   "Polars",
   "DuckDB",
+  "Terra.bio",
+  "All of Us",
   "ggplot",
   "SQL",
   "Docker",
@@ -86,6 +89,7 @@ items = [
   "SAIGE",
   "PLINK",
   "BCFtools",
+  "Tractor",
 ]
 
 [params.my_projects]
@@ -99,8 +103,8 @@ github = "https://github.com/belowlab/drive"
 documentation = "https://drive-ibd.readthedocs.io/en/latest/"
 contributions = [
   "Conceptual design and programmatic implementation",
-  "Optimized memory usage and performance for large-scale biobank data with packages like duckdb and pandas",
-  "Wrote comprehensive documentation available on both GitHub and Readthedocs.",
+  "Optimized memory usage and performance for large-scale biobank data with packages like DuckDB and Pandas",
+  "Wrote comprehensive documentation available on both GitHub and Read the Docs.",
   "Integration tests as well as continuous integration through GitHub actions",
   "Performance testing and benchmarks using pytest",
   "Simulated test IBD data for integration tests and examples",
@@ -112,9 +116,9 @@ description = "A computational workflow for identity-by-descent (IBD) mapping. I
 image = "/images/IBDMap_flowchart.png"
 github = "https://github.com/rjbohlender/IBDMap"
 contributions = [
-  "Restructured & refactored python IBDreduce code to PDM build system for reproducible installs",
-  "Containerized application using a multi-stage docker build",
-  "Tested the build and install pipelines for the c++ code and the python code",
+  "Restructured & refactored Python IBDreduce code to use modern Python features and idioms",
+  "Containerized application using a multi-stage Docker build",
+  "Tested the build and install pipelines for the C++ code and the Python code to ensure performance on different CPU architectures",
 ]
 
 [[params.my_projects.items]]
@@ -124,12 +128,14 @@ image = "/images/COMPADRE_flowchart_v2.png"
 github = "https://github.com/jtb324/COMPADRE"
 documentation = "https://jtb324.github.io/COMPADRE"
 contributions = [
-  "Tested the conda and docker installations",
-  "Refactored communication between both the perl frontend and the python server to improve error handling and user experience",
+  "Tested the conda and Docker installations",
+  "Refactored logging interface between both the Perl frontend and the Python server to improve error handling and user experience",
+  "Designed and implemented unit and integration testing framework using the Perl 'prove' tool and implemented CI/CD to automatically run all test",
+  "Reduced memory footprint of program to increase runtime efficiency",
 ]
 [[params.my_projects.items]]
-title = "Pubmed RAG"
-description = "CLI TUI that allows the user to search for abstracts related to a topic of interest. Abstracts are retrieved from pubmed and then embedded with a vector database. Vector search is performed to find relevant abstracts and then an llm is used to summarize the abstracts and return results. This project uses common technologies like FastAPI, LangChain, HuggingFace (LLMs), Qdrant (for vector store), and Bubbletea (tui interface)."
+title = "PubMed RAG"
+description = "CLI TUI that allows the user to search for abstracts related to a topic of interest. Abstracts are retrieved from PubMed and then embedded with a vector database. Vector search is performed to find relevant abstracts and then an LLM is used to summarize the abstracts and return results. This project uses common technologies like FastAPI, LangChain, HuggingFace (LLMs), Qdrant (for vector store), and Bubble Tea (TUI interface)."
 image = "/images/pubmed_llm_rag_project.png"
 github = "https://github.com/jtb324/pubmed_rag"
 
@@ -145,9 +151,11 @@ name = "Graduate Student Researcher"
 date = "Aug 2019 - Present"
 content = ""
 projects = [
-  "DRIVE: Python CLI tool leveraging graph theory and identity-by-descent (IBD) in biobanks to identify networks of related individuals",
-  "IBDMap: A C++ and python tool testing genome-wide for enrichment of IBD sharing between pairs of cases and case-control pairs in a biobank",
-  "COMPADRE: Perl and Python tool for Pedigree reconstruction and the identification of the maximum unrelated set",
+  "Executed scalable cloud-based pipelines (WDL/Terra.bio) for quality control, pedigree reconstruction, and relatedness analysis in whole genome sequencing data for 35,024 predominantly African ancestry individuals using PLINK and BCFtools. Also contributed local ancestry informed GWAS for white and red blood cell count in this cohort.",
+  "Orchestrated large-scale local ancestry inference, IBD segment detection, and comprehensive variant annotation (using VEP) for 250,000 WGS BioVU participants.",
+  "Developed scalable software to optimize IBD mapping within the 93,000 BioVU participants with genotyping enabling large-scale phenome-wide analysis in electronic health records.",
+  "Identified the background haplotype harboring a rare variant in RHO that is causal for Retinitis Pigmentosa by leveraging multi-individual IBD clustering with local ancestry data",
+  "Conducted GWAS analysis using SAIGE for Von-Willebrand factor in 70,000 BioVU participants contributing to large multi-institution meta-analysis",
 ]
 
 [[params.experience.items]]
@@ -165,23 +173,41 @@ projects = [
 [params.education]
 enable = true
 [[params.education.items]]
-title = "PhD in human genetics"
+title = "PhD in Human Genetics"
 school = { name = "Vanderbilt University", url = "https://www.vanderbilt.edu/" }
-date = "Aug 2019 - present"
+date = "Aug 2019 - Present"
 [[params.education.items]]
 title = "B.S. in Chemistry"
 school = { name = "North Carolina State University", url = "https://www.ncsu.edu/" }
-date = "Aug 2014  - May 2018"
+date = "Aug 2014 - May 2018"
 [[params.education.items]]
 title = "B.S. in Biochemistry"
 school = { name = "North Carolina State University", url = "https://www.ncsu.edu/" }
-date = "Aug 2016  - May 2019"
+date = "Aug 2016 - May 2019"
 
 [params.projects]
 enable = true
 title = "Publications"
 [[params.projects.items]]
+title = "DRIVE v3: command line application for identity-by-descent haplotype clustering in large biobank-scale data"
+status = "Revise & Resubmit"
+authors = "James T Baker, Hung-Hsin Chen, Grahame F Evans, Alyssa C Scartozzi, Ryan J Bohlender, Chad D Huff, Quinn S Wells, David C Samuels, Jennifer E Below"
+content = "Genetic Epidemiology 2026"
+
+[[params.projects.items]]
+title = "IBDMap: biobank-scale identity-by-descent mapping software for dichotomous traits."
+status = "Revise & Resubmit"
+authors = "Ryan J. Bohlender*, Grahame F Evans*, James T Baker*, Joshua M Landman, Elizabeth G Frankel, Autumn R Morrow, Lauren E Petty, Alexander S Petty, Lisa A Bastarache, Hung-Hsin Chen, Matthew S Zawistowski, David C Samuels, Quinn S Wells, Jennifer E Below, Chad D Huff"
+
+[[params.projects.items]]
+title = "Out of sight, out of mind: Characterizing the variant landscape of ALPL and associated medical records in a clinical cohort enriched for African ancestry highlights the diagnostic failure of HPP in this population"
+status = "Under Review"
+authors = "Kimberlyn A. Ellis, Wanying Zhu, James T. Baker, Lauren E. Petty, Dayi Bian, Elena Evans, Hannah G. Polikowsky, Margo Black, Emily Shardelow, E. Mason Campbell, La Toya Hannah, Alexander Petty, Jennifer E. Below, Kathryn M. Dahir"
+content = "MedRxiv 2025"
+
+[[params.projects.items]]
 title = "Common variant approaches to study Mendelian disease gene function identify novel phenome and pathways associated with PLOD3"
+status = "Revise & Resubmit"
 authors = "Alexandra Scalici, James T Baker, Freida Blostein, Megan Shuey, Dharmendra Choudhary, Ela W Knapik, David C Samuels, Jennifer E Below, Lisa Bastarache, Tyne W Miller-Fleming, Nancy J Cox"
 content = "MedRxiv 2025"
 [params.projects.items.featured]
@@ -192,6 +218,7 @@ link = "https://doi.org/10.1101/2025.11.25.25340832"
 title = "Genome sequencing of 35,024 predominantly African ancestry persons addresses gaps in genomics and healthcare"
 authors = "Cecile Avery, Mojgan Babanejad, James Baker, Xavier Bledsoe, Freida Blostein, Robert W Corty, Kimberlyn Ellis, Adriana M Hung, Allison Lake, John Shelley, Quanhu Sheng, Vanderbilt University Medical Center and Alliance for Genomic Discovery Investigators, Melinda Aldrich, Melissa Basford, Lisa Bastarache, Jennifer Below, Alexander G Bick, Peter Embi, QiPing Feng, Eric Gamazon, Lide Han, Jibril Hirbo, Kayla Marginean, Jonathan Mosley, Jill Pulley, Dan M. Roden, Douglas M Ruderfer, Megan Shuey, Yu Shyr, C Michael Stein, Colin Walsh, Consuelo Wilkins"
 content = "MedRxiv 2025"
+status = "Revise & Resubmit"
 [params.projects.items.featured]
 name = "Link"
 link = "https://doi.org/10.1101/2025.10.30.25338549"
@@ -240,7 +267,7 @@ link = "https://doi.org/10.1002/alz.080074"
 
 
 [[params.projects.items]]
-title = "2-aminobenzimidazoles as antibiofilm agents against salmonella enterica serovar typhimurium"
+title = "2-aminobenzimidazoles as antibiofilm agents against Salmonella enterica serovar Typhimurium"
 authors = "Huggins, W. M., Vu Nguyen, T., Hahn, N. A., Baker, J.T., Kuo, L. G., Kaur, D., Melander, R. J., Gunn, J. S., & Melander, C"
 content = "MedChemComm (2018)"
 [params.projects.items.featured]
